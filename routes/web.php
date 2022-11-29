@@ -28,5 +28,6 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::resource('photos', PhotoController::class);
+Route::resource('photos', PhotoController::class)
+    ->only(['index','show','store','update']);
 
