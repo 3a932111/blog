@@ -29,5 +29,5 @@ Route::middleware([
 });
 
 Route::resource('photos', PhotoController::class)
-    ->only(['index','show','store','update']);
+    ->only(['index','show','store','update','destroy']);
 
