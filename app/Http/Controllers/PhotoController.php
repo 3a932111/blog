@@ -3,17 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+//use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Route;
 
 class PhotoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
+
+            return 'index';
+
+
     }
 
     /**
@@ -23,7 +24,9 @@ class PhotoController extends Controller
      */
     public function create()
     {
-        //
+
+            return "create";
+
     }
 
     /**
@@ -37,7 +40,7 @@ class PhotoController extends Controller
         //
     }
 
-    /**
+    /*
      * Display the specified resource.
      *
      * @param  int  $id
@@ -45,10 +48,12 @@ class PhotoController extends Controller
      */
     public function show($id)
     {
-        //
+
+            return 'show';
+
     }
 
-    /**
+    /*
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
@@ -56,7 +61,7 @@ class PhotoController extends Controller
      */
     public function edit($id)
     {
-        //
+            return 'edit';
     }
 
     /**
